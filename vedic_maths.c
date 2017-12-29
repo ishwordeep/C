@@ -14,7 +14,7 @@ printf("%d\n",a+6);
 printf("%d\t",a+7);
 printf("%d\t",a);
 printf("%d\n\n\n",a+8);
-printf("you will gate result %d while doing addition from any side",a+3+a+8+a+1);
+printf("you will get result %d while doing addition from any side",a+3+a+8+a+1);
 getch();
 
 }
