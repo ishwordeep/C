@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    float num,sum=0,count=0;
+    printf("Enter numbers to find average\nClick 0 to calculate\n");
+    while(num!=0)
+    {
+
+        scanf("%f",&num);
+        sum=sum+num;
+        if(num!=0)
+        {
+            count=count+1;
+
+        }
+
+    }
+
+    printf("Average=%f",sum/count);
+
+getch();
+}
