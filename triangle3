@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    char ch,ch1;
+    for(ch='a';ch<='z';ch++)
+    {
+        for(ch1='a';ch1<=ch;ch1++)
+        {
+            printf("%c ",ch1);
+        }
+        printf("\n");
+    }
+    getch();
+
+}
