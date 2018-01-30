@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int sub[5],i,total=0;
+    printf("Enter your numbers,I will print that.\n");
+    for(i=0;i<5;i++)
+    {
+           scanf("%d",&sub[i]);
+           total=total+sub[i];
+
+    }
+    printf("The numbers you entered are:\n");
+     for(i=0;i<5;i++)
+    {
+
+            printf("%d\n",sub[i]);
+
+    }
+
+    printf("Total=%d",total);
+    getch();
+}
