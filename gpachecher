@@ -1,0 +1,66 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a,b,c,d,e,total,gpa;
+    float percent;
+
+    printf("\n\n\t\t\t\t\tEnter your marks:\n\n\t\t\t- - - - - - - - - - - - - - - - - - - - - - - - - -\n\n");
+    printf("\t\t\t\t\tEnglish: ");
+    scanf("%d",&a);
+    printf("\n\t\t\t\t\tNepali: ");
+    scanf("%d",&b);
+    printf("\n\t\t\t\t\tSocial: ");
+    scanf("%d",&c);
+    printf("\n\t\t\t\t\tMaths: ");
+    scanf("%d",&d);
+    printf("\n\t\t\t\t\tAccount: ");
+    scanf("%d",&e);
+
+    total=a+b+c+d+e;
+    percent=total/5;
+    gpa=percent/25;
+
+    if(a<=100&&b<=100&&c<=100&&d<=100&&e<=100)
+    {
+        if(a>=32&&b>=32&&c>=32&&d>=32&&e>=32&&a<=100&&b<=100&&c<=100&&d<=100&&e<=100)
+        {
+            printf("\n\n\t\t\t- - - - - - - - - - - - - - - - - - - - - - - - - -\n\n\t\t\t\tCongratulation ! You have been passed.\n");
+
+            if(gpa>=3.5&&gpa<=4)
+            printf("\t\t\t\tYour total marks is %d with GPA %.2f GRADE: A",total,percent/25 );
+            else if(gpa>=3&&gpa<3.5)
+            printf("\t\t\t\tYour total marks is %d with GPA %.2f GRADE: B",total,percent/25);
+            else if(gpa>=2.5&&gpa<3)
+            printf("\t\t\t\tYour total marks is %d with GPA %.2f GRADE: C",total,percent/25);
+            else
+            printf("\t\t\t\tYour total marks is %d with GPA %.2f GRADE: D",total,percent/25);
+
+        }
+        else
+        {
+            printf("\n\n\t\t\t- - - - - - - - - - - - - - - - - - - - - - - - - -\n\n\t\t\t\tSorry ! You have been failed\n\n");
+            if(a<32)
+            printf("\t\t\t\t\tEnglish:%d***\n",a);
+            if(b<32)
+            printf("\t\t\t\t\tNepali: %d***\n",b);
+            if(c<32)
+            printf("\t\t\t\t\tsocial: %d***\n",c);
+            if(d<32)
+            printf("\t\t\t\t\tMaths:  %d***\n",d);
+            if(e<32)
+            printf("\t\t\t\t\tAccount:%d***\n",e);
+
+
+        }
+
+    }
+    else
+    {
+
+        printf("\n\n\t\t\t- - - - - - - - - - - - - - - - - - - - - - - - - -\n\n\t\t\t\t\tInvalid Input");
+    }
+
+
+    getch();
+}
