@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int mula[10][10],aalu[10][10],i,j,m,n;
+    printf("Enter the order of matrix:\n");
+    scanf("%d%d",&m,&n);
+
+    printf("Enter all the elements of matrix:\n");
+
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            scanf("%d",&mula[i][j]);
+        }
+    }
+     for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            scanf("%d",&aalu[i][j]);
+        }
+    }
+
+     for(i=0;i<m;i++)
+     {
+
+     for(j=0;j<n;j++)
+        {
+            printf("%d  ",mula[i][j]+aalu[i][j]);
+        }
+        printf("\n");
+    }
+    getch();
+}
