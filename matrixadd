@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int row[3][3],col[3][3],i,j;
+    printf("Enter the elements of matrix:\n");
+//fOR THE FIRST mATRIX
+    for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+                {
+                    scanf("%d",&row[i][j]);
+                }
+        }
+        //FOR THE SECOND MATRIX
+
+    for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+                {
+                    scanf("%d",&col[i][j]);
+                }
+
+        }
+        //fOR THE aDDITION
+
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+            {
+                printf("%d ",row[i][j]+col[i][j]);
+            }
+            printf("\n");
+    }
+getch();
+}
+
