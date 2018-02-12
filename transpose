@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int row[3][3],col[3][3],i,j;
+    printf("Enter the elements of matrix:\n");
+//fOR THE FIRST mATRIX
+    for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+                {
+                    scanf("%d",&row[i][j]);
+                }
+        }
+
+        printf("\n\nGiven Matrix is:\n");
+        for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+                {
+                    printf("%d ",row[i][j]);
+                }
+                printf("\n");
+        }
+
+
+    printf("\n\nTranspose of matrix is:\n");
+
+    for(j=0;j<3;j++)
+    {
+        for(i=0;i<3;i++)
+            {
+                printf("%d ",row[i][j]);
+            }
+            printf("\n");
+    }
+
+
+getch();
+}
+
